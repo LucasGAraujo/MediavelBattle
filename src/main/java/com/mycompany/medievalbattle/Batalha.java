@@ -12,21 +12,18 @@ import Models.Orc;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-<<<<<<< HEAD
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-=======
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
 
 /**
  *
  * @author lukin
  */
 public class Batalha {
-<<<<<<< HEAD
+
     private static final Logger LOGGER = LoggerFactory.getLogger(Batalha.class);
-=======
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
     private Random random = new Random();
     private Jogador jogador;
     
@@ -36,10 +33,6 @@ public class Batalha {
     }
 
     public void realizarBatalha() {
-<<<<<<< HEAD
-
-=======
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
         Monstro m1 = new MortoVivo();
         Monstro m2 = new Orc();
         Monstro m3 = new Kobold();
@@ -51,7 +44,7 @@ public class Batalha {
         int valorHeroi = random.nextInt(10) + 1;
         int valorMonstro = random.nextInt(10) + 1;
         Monstro monstroSelecionado = listaDeMonstros.get(monstroSorteado);
-<<<<<<< HEAD
+
         LOGGER.info("    ");
         LOGGER.info("--------------------------------------");
         LOGGER.info("Possíveis monstros a enfrentar ... ");
@@ -74,7 +67,7 @@ public class Batalha {
 
         LOGGER.debug("Valor Monstro: " + (valorMonstro + monstroSelecionado.getAgilidade()));
         LOGGER.debug("Valor Herói: " + (valorHeroi + jogador.getHeroi().getAgilidade()));
-=======
+
         System.out.println("    ");
         System.out.println("--------------------------------------");
         System.out.println("Possíveis monstros a enfrentar ... ");
@@ -97,7 +90,7 @@ public class Batalha {
  
         System.out.println("Valor Monstro: " + (valorMonstro + monstroSelecionado.getAgilidade()));
         System.out.println("Valor Herói: " + (valorHeroi + jogador.getHeroi().getAgilidade()));
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
         String IniciaAtaque = (valorMonstro > valorHeroi) ? "Monstro inicia" : "Herói inicia";
         boolean  iniciamonstro =  (valorMonstro > valorHeroi) ? true : false;
         System.out.println(IniciaAtaque);
@@ -108,24 +101,23 @@ public class Batalha {
             if (iniciamonstro) {
                 int valorataque = random.nextInt(10) + 1 + monstroSelecionado.getAgilidade() + monstroSelecionado.getForca();
                 int valordefesa = random.nextInt(10) + 1 + jogador.getHeroi().getAgilidade() + jogador.getHeroi().getDefesa();
-<<<<<<< HEAD
                 LOGGER.info("Resultado dado de 10 - Monstro ATACA");
                 LOGGER.info("Valor de ataque: {} " , valorataque);
                 LOGGER.info("Valor de defesa: {}", valordefesa);
-=======
+
                 System.out.println("Resultado dado de 10 - Monstro ATACA");
                 System.out.println("Valor de ataque: " + valorataque);
                 System.out.println("Valor de defesa: " + valordefesa);
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
                 System.out.println("");
                 System.out.println("------------------");
                 System.out.println("");
                 if (valorataque <= valordefesa) {
-<<<<<<< HEAD
+
                     LOGGER.info("Valor de ataque igual ou menor... girando rodada");
-=======
+
                     System.out.println("Valor de ataque igual ou menor... girando rodada");
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
                     System.out.println("");
                 System.out.println("------------------");
                 System.out.println("");
@@ -137,24 +129,24 @@ public class Batalha {
             } else {
                 int valorataque = random.nextInt(10) + 1 + jogador.getHeroi().getAgilidade() + jogador.getHeroi().getForca();
                 int valordefesa = random.nextInt(10) + 1 + monstroSelecionado.getAgilidade() + monstroSelecionado.getDefesa();
-<<<<<<< HEAD
+
                 LOGGER.info("Resultado dado de 10 - herói ATACA");
                 LOGGER.info("Valor de ataque: {} " , valorataque);
                 LOGGER.info("Valor de defesa: {}", valordefesa);
-=======
+
                 System.out.println("Resultado dado de 10 - herói ATACA");
                 System.out.println("Valor de ataque: " + valorataque);
                 System.out.println("Valor de defesa: " + valordefesa);
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
                 System.out.println("");
                 System.out.println("------------------");
                 System.out.println("");
                 if (valorataque <= valordefesa) {
-<<<<<<< HEAD
+
                     LOGGER.info("Valor de ataque igual ou menor... girando rodada");
-=======
+
                     System.out.println("Valor de ataque igual ou menor... girando rodada");
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
                     System.out.println("");
                 System.out.println("------------------");
                 System.out.println("");
@@ -166,23 +158,23 @@ public class Batalha {
         }
 
         String resultado;
-<<<<<<< HEAD
+
         LOGGER.info("A rodada durou ..." + rodadas);
         if (jogador.getHeroi().getPdVida() <= 0) {
             LOGGER.info("O monstro venceu!");
             resultado = "perdeu";  
         } else {
             LOGGER.info("O herói venceu!");
-=======
+
         System.out.println("A rodada durou ..." + rodadas);
         if (jogador.getHeroi().getPdVida() <= 0) {
             System.out.println("O monstro venceu!");
             resultado = "perdeu";  
         } else {
             System.out.println("O herói venceu!");
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
             resultado = "Ganhou";  
         }
         jogador.gravarLog(jogador.getNickName(), jogador.getHeroi().getTipoHeroi(), resultado, monstroSelecionado.getTipoMonstro(), rodadas);
     }
+}
 }
