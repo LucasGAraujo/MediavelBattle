@@ -31,7 +31,7 @@ public class Menu {
             System.out.println("");
             System.out.println("Escolha um herói");
             System.out.println("[ ] Herói  - Ponto de vida - Força - Defesa - Agilidade - Fator de Dano ");
-            System.out.println("[1] Guerreiro -     12      -   4   -    3   -     3     -       2d4     ");
+            System.out.println(".[1] Guerreiro -     12      -   4   -    3   -     3     -       2d4     ");
             System.out.println("[2] Bárbaro   -     13      -   6   -    1   -     3     -       2d6     ");
             System.out.println("[3] Paladino  -     15      -   2   -    5   -     1    -        2d4     ");
             int opcao;
