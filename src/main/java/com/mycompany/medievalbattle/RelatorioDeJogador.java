@@ -20,8 +20,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class RelatorioDeJogador {
-<<<<<<< HEAD
-
 
     public String getMonstroEnfrentado() {
         return obterMonstroMaisEnfrentado();
@@ -31,8 +29,6 @@ public class RelatorioDeJogador {
         return obterHeroiMaisJogado();
     }
 
-=======
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
     private static class RegistroDeJogador {
         private String dataDaPartida;
         private String heroiEscolhido;

@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version> <!-- Use a versão mais recente disponível -->
+            <version>1.7.32</version>
 
         </dependency>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.6</version> <!-- Use a versão mais recente disponível -->
+            <version>1.2.6</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -34,6 +34,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-=======
->>>>>>> bb87e367234b242189bde83d50ecbe3390f0d1a6
+
 </project>
